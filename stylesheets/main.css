@@ -1,0 +1,32 @@
+/************************************
+GENERAL
+************************************/
+header {
+	border-bottom: 25px;
+	border-bottom-style: solid;
+	background-color: black;
+	border-bottom-color: red;
+	border-bottom-width: 4px;
+	
+}
+
+ul.menu li{
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 35px;
+	padding-top: 25px;
+	font-size: 20px;
+	color: red;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 36px;
+	color: red;
+	padding-left: 45px
+}
+
+.menu {
+	float: right;
+}
+
