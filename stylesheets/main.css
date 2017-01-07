@@ -2,31 +2,101 @@
 GENERAL
 ************************************/
 header {
-	border-bottom: 25px;
+	border-bottom: 65px;
 	border-bottom-style: solid;
 	background-color: black;
-	border-bottom-color: red;
-	border-bottom-width: 4px;
 	
+	
+
 }
 
 ul.menu li{
 	list-style-type: none;
 	display: inline-block;
-	margin-right: 35px;
-	padding-top: 25px;
+	margin-right: 50px;
+	margin-bottom: 50px;
 	font-size: 20px;
 	color: red;
+
+	
 }
 
 h1 {
 	display: inline-block;
 	font-size: 36px;
 	color: red;
-	padding-left: 45px
+	padding-top: 65px;
+	margin-left: 25px;
+	text-decoration: underline;
+	
+}
+
+h3 {
+	display: inline-block;
+	font-size: 28px;
+	color: red;
+	padding-top: 10px;
+	margin-left: 100px;
+
 }
 
 .menu {
 	float: right;
+	
 }
+
+footer {
+	font-size: 25px;
+	float:left;
+	width: 50%;
+	font-weight: bold;
+
+
+}
+
+
+/**********************************************
+PAGE: FLOOR PLANS
+**********************************************/
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+
+table, th, td {
+	text-align: center;
+	border: 3px solid black;
+}
+
+th {
+	font-weight: bold;
+	font-size: 55px;
+}
+
+td {
+	font-size: 45px;
+	padding: 10px;
+}
+
+/**********************************************
+PAGE: CONTACT
+**********************************************/
+.Main_Apartment_Pic {
+	width: auto;
+	height: auto;
+}
+
+.contact-header {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+.address-info {
+	font-weight: bold
+}
+
+
 
