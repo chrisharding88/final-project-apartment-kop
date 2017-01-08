@@ -2,12 +2,10 @@
 GENERAL
 ************************************/
 header {
-	border-bottom: 65px;
+	border-bottom: 55px;
 	border-bottom-style: solid;
 	background-color: black;
-	
-	
-
+ 	
 }
 
 ul.menu li{
@@ -17,6 +15,7 @@ ul.menu li{
 	margin-bottom: 50px;
 	font-size: 20px;
 	color: red;
+	line-height: 20px;
 
 	
 }
@@ -25,9 +24,8 @@ h1 {
 	display: inline-block;
 	font-size: 36px;
 	color: red;
-	padding-top: 65px;
+	padding-top: 55px;
 	margin-left: 25px;
-	text-decoration: underline;
 	
 }
 
@@ -37,6 +35,7 @@ h3 {
 	color: red;
 	padding-top: 10px;
 	margin-left: 100px;
+	float: left;
 
 }
 
@@ -50,6 +49,7 @@ footer {
 	float:left;
 	width: 50%;
 	font-weight: bold;
+	border-top: 55px; 
 
 
 }
@@ -80,9 +80,85 @@ td {
 	padding: 10px;
 }
 
+
+/**********************************************
+PAGE: GALLERY
+**********************************************/
+.slide-viewer{
+	position: relative;
+	overflow: hidden;
+	height: 300px;
+}
+
+.slide-group{
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+
+}
+
+.slide:first-child{
+	display:block;
+}
+
+
 /**********************************************
 PAGE: CONTACT
 **********************************************/
+
+.message {
+	float:right;
+	margin-right: 35px;
+	margin-bottom: 95%;
+
+}
+
+.info {
+	float: left;
+	margin-left: 25px;
+}
+
+
+.l_name{
+	float:right;
+	margin-right:315px;
+}
+
+.f_name,
+.l_name{
+	display: inline-block;
+}
+
+.f_name{
+	float:left
+}
+ .e-mail{
+ 	border: 5px;
+ }
+
+
+
+
+.address p {
+	font-size: 25px;
+}
+
+.contact p {
+	font-size: 25px;
+}
+
+.office-hours p {
+	font-size: 25px;
+}
+
 .Main_Apartment_Pic {
 	width: auto;
 	height: auto;
@@ -94,9 +170,21 @@ PAGE: CONTACT
 	color: black;
 }
 
-.address-info {
+.address h1 {
 	font-weight: bold
+	font-size: 66px;
 }
+
+.contact-info {
+	font-weight: bold
+	font-size: 55px;
+}
+
+.hours-info {
+	font-weight: bold
+	font-size: 55px;
+}
+
 
 
 
