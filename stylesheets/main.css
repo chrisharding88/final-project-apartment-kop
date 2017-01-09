@@ -50,14 +50,44 @@ footer {
 	width: 50%;
 	font-weight: bold;
 	border-top: 55px; 
-
-
 }
+
+a{
+	color: red;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+/**********************************************
+PAGE: AMENITIES
+**********************************************/
+.amenties-column1{
+	float: left
+	
+}
+
+.amenties-column2 {
+	float:right;
+}
+
+.amenties-column1,
+.amenties-column2{
+	
+}
+
 
 
 /**********************************************
 PAGE: FLOOR PLANS
 **********************************************/
+
+section {
+	color:black;
+}
 
 table {
 	border-collapse: collapse;
@@ -144,7 +174,9 @@ PAGE: CONTACT
  	border: 5px;
  }
 
-
+p {
+	color: #000;
+}
 
 
 .address p {
