@@ -5,15 +5,24 @@ header {
 	border-bottom: 55px;
 	border-bottom-style: solid;
 	background-color: black;
- 	
+	padding-top: -15px;
+
 }
+
+body{
+	font-family: 'Chicle', cursive;
+
+
+}
+
+
+
 
 ul.menu li{
 	list-style-type: none;
 	display: inline-block;
 	margin-right: 50px;
-	margin-bottom: 50px;
-	font-size: 20px;
+	font-size: 27px;
 	color: red;
 	line-height: 20px;
 
@@ -47,9 +56,18 @@ h3 {
 footer {
 	font-size: 25px;
 	float:left;
-	width: 50%;
+	bottom: 0;
+	height:60px;
+	position:fixed;
+	width: 100%;
 	font-weight: bold;
-	border-top: 55px; 
+	color: red; 
+	border-top: 55px;
+	border-top-style:solid;
+	border-top-color: black;
+	background-color: black;
+	padding-bottom: -10px;
+	
 }
 
 a{
@@ -63,20 +81,86 @@ a:hover{
 }
 
 /**********************************************
+PAGE: HOME
+**********************************************/
+p.welcome{
+	font-size: 25px;
+	width:45%;
+	color: white;
+}
+
+h1.welcome-header,
+p.welcome {
+	margin-left: 20px;
+	background: rgba(0,0,0,0.4);
+}
+
+h1.welcome-header{
+	width:45%;
+}
+
+
+html.background {
+	background-image: url("../img/main_apartment.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+section.welcome-display{
+
+}
+
+
+
+
+
+
+
+/**********************************************
 PAGE: AMENITIES
 **********************************************/
 .amenties-column1{
-	float: left
-	
+	float:left;
+	list-style-type: circle;
+	margin-left: 55px;
 }
-
 .amenties-column2 {
-	float:right;
+	float: right;
+	list-style-type: circle;
+	margin-right: 405px;
 }
 
 .amenties-column1,
 .amenties-column2{
-	
+	font-size: 36px;
+}
+
+.room1{
+	width:475px;
+	height:300px
+}
+
+.room2{
+	width:475px;
+	height:300px;
+}
+
+.pool{
+	width:475px;
+	height:300px
+}
+
+.game_room{
+	width:475px;
+	height:300px;
+}
+
+.room1,
+.room2,
+.pool,
+.game_room{
+	display: inline-block;
 }
 
 
@@ -92,6 +176,12 @@ section {
 table {
 	border-collapse: collapse;
 	width: 100%;
+	height: 70%
+	position: relative;
+	table-layout: fixed;
+	margin-bottom: 200px;
+
+	
 }
 
 
@@ -109,6 +199,41 @@ td {
 	font-size: 45px;
 	padding: 10px;
 }
+
+.bedroom_bathroom_1{
+	width:200px;
+	height: 200px;
+}
+
+.bedroom_bathroom_2{
+	width:200px;
+	height: 200px;
+}
+
+.bedroom_bathroom_3{
+	width:200px;
+	height: 200px;
+}
+
+.bedroom_bathroom_4{
+	width:200px;
+	height: 200px;
+}
+.bedroom_bathroom_5{
+	width:200px;
+	height: 200px;
+}
+.bedroom_bathroom_6{
+	width:200px;
+	height: 200px;
+}
+
+
+
+
+
+
+
 
 
 /**********************************************
@@ -146,14 +271,17 @@ PAGE: CONTACT
 
 .message {
 	float:right;
-	margin-right: 35px;
-	margin-bottom: 95%;
+	font-size:30px;
+	margin-bottom: 200px;
+	width: 45%;
 
 }
 
 .info {
 	float: left;
 	margin-left: 25px;
+	margin-bottom: 200px;
+
 }
 
 
@@ -192,8 +320,8 @@ p {
 }
 
 .Main_Apartment_Pic {
-	width: auto;
-	height: auto;
+	width: 300px;
+	height: 250px;
 }
 
 .contact-header {
