@@ -1,24 +1,24 @@
 	//to ensure the DOM is ready 
 $(document).on('ready', function(){
 
-	/* var count = 0;
-	var images = ["../img/indoor-pool.jpg","../img/welcomecenter.jpg","../img/game-room.jpg","../img/room1.jpg"];
-	var img_background = $("html.background");
+	   var count = 0;
+	   var images = ["img/indoor-pool.jpg","img/welcomecenter.jpg","img/game-room.jpg","img/room1.jpg"];
+	   var img_background = $("html.background");
 
-	img_background.css("background","("+images[count]+")")
+	    // img_background.css("background", "url("+images[count]+")");
+        // img_background.css('background-image', 'url("img/welcomecenter.jpg")')
 
-	setInterval(function(){
-		img_background.fadeOut(500, function(){
-			img_background.css("background","("+images[count++]+")");
-			img_background.fadeIn(500);
-		});
-		if (count === img_background.length)
-		{
-			count = 0;
-		}
+	      // setInterval(function(){
+	    	// img_background.fadeOut(500, function(){
+	 		// img_background.css("background","("+images[count++]+")");
+	  		// img_background.fadeIn(500);
+	    	// });
+	    	// if (count === img_background.length)
+	   	// {
+	  		// count = 0;
+    	// }
 
-	}, 5000);*/
-
+	  // }, 5000);
 
 
 
@@ -34,6 +34,38 @@ $(document).on('ready', function(){
 		var buttonArray = [];
 		var currentIndex = 0;
 		var timeout;
+
+		function move (newIndex){
+			var animateLeft, slideLeft;
+
+			advance();
+
+
+			if ($group.is(':animated')|| currentIndex === newIndex){
+				return;
+			}
+
+			buttonArray[currentIndex].removeClass('active');
+			buttonArray[newIndex].addClass('active');
+
+			if (newIndex > currentIndex) {
+				slideLeft = '100%';
+				animateLeft ='-100%';
+			} else {
+				slideLeft = '-100%';
+				animateLeft ='100%';
+			}
+
+			$slides.eq(newIndex).css(	{left:slideLeft, display:'block'}	);
+			$group.animate(	{left:animateLeft}, function() {
+				$slides.eq(currentIndex).css( {display:'none'});
+				$slides.eq(newIndex).css( {left:0});
+				$group.css({left:0});
+				currentIndex = newIndex;
+
+			});
+
+		}
 
 		function advance () {
 			clearTimeout(timeout);
