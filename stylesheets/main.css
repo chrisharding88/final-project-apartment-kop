@@ -110,9 +110,9 @@ h1.welcome-header{
 
 
 html.background {
-	background-image: url("../img/main_apartment.jpg");
+	/*background-image: url("../img/main_apartment.jpg");*/
 	background-repeat: no-repeat;
-	background-size: cover;*/
+	background-size: cover;
 	height: 100%;
 }
 

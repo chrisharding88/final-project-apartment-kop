@@ -5,21 +5,18 @@ $(document).on('ready', function(){
 	   var images = ["img/indoor-pool.jpg","img/welcomecenter.jpg","img/game-room.jpg","img/room1.jpg"];
 	   var img_background = $("html.background");
 
-	    // img_background.css("background", "url("+images[count]+")");
-        // img_background.css('background-image', 'url("img/welcomecenter.jpg")')
+	    img_background.css("background-image", "url("+images[count]+")");
+        setInterval(function(){
+        	 img_background.css("background-image", "url("+images[count]+")");
+        	 count++
+        	 img_background.fadeIn(2000);
+        	 if (count === images.length){
+        	 	count = 0;
+        	 }
+        	 console.log(count)
 
-	      // setInterval(function(){
-	    	// img_background.fadeOut(500, function(){
-	 		// img_background.css("background","("+images[count++]+")");
-	  		// img_background.fadeIn(500);
-	    	// });
-	    	// if (count === img_background.length)
-	   	// {
-	  		// count = 0;
-    	// }
-
-	  // }, 5000);
-
+        }, 6000)
+	      
 
 
 
